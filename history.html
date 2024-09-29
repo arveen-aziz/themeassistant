@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User History</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+<body>
+    <!-- Header with logo at the top right -->
+    <div class="header">
+        <div class="logo-container">
+            <img src="logo.webp" alt="Logo" class="logo"> <!-- Reduced size of logo -->
+        </div>
+    </div>
+
+    <!-- Main content section for user's design history -->
+    <div class="history-container">
+        <h1 class="page-title">Welcome Back, [Username]</h1>
+
+        <!-- Title section adjusted for better positioning -->
+        <div class="section-header">
+            <h2 class="section-title">Your Design History</h2>
+        </div>
+
+        <!-- Horizontal scrollable grid to display previous design history items -->
+        <div class="history-scroll-container">
+            <div class="history-grid">
+                <!-- Example of a design history item -->
+                <div class="history-item">
+                    <img src="image1.png" alt="Previous Image" class="history-image">
+                    <div class="history-details">
+                        <p>Color Palette: #ff5733, #33ff57, #3357ff</p>
+                        <p>Suggested Fonts: Arial, Helvetica</p>
+                        <p>Suggested Clipart:</p>
+                        <img src="clipart1.png" alt="Clipart" class="suggested-clipart">
+                    </div>
+                </div>
+                
+                <div class="history-item">
+                    <img src="image2.png" alt="Previous Image" class="history-image">
+                    <div class="history-details">
+                        <p>Color Palette: #ff5733, #33ff57, #3357ff</p>
+                        <p>Suggested Fonts: Roboto, Times New Roman</p>
+                        <p>Suggested Clipart:</p>
+                        <img src="clipart2.png" alt="Clipart" class="suggested-clipart">
+                    </div>
+                </div>
+
+                <div class="history-item">
+                    <img src="image3.png" alt="Previous Image" class="history-image">
+                    <div class="history-details">
+                        <p>Color Palette: #ff5733, #33ff57, #3357ff</p>
+                        <p>Suggested Fonts: Arial, Helvetica</p>
+                        <p>Suggested Clipart:</p>
+                        <img src="clipart3.png" alt="Clipart" class="suggested-clipart">
+                    </div>
+                </div>
+                
+                <!-- Additional items will be rendered here... -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with buttons aligned side-by-side -->
+    <div class="footer">
+        <button class="logout-button" onclick="window.location.href='websiteindex.html'">Logout</button>
+        <button class="navigate-button" onclick="window.location.href='imageentry.html'">New Design</button>
+    </div>
+
+    <script src="history.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="websiteindex.css">
+    <script src="sign-in.js"></script>
+    <title>Sign In / Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-column">
+                <h2 class="form-title">Sign In</h2>
+                <form action="/signin" method="POST">
+                    <h2 class="form-title">Username</h2>
+                    <input type="text" class="input-field" name="username" placeholder="Enter your username" required>
+            
+                    <h2 class="form-title">Password</h2>
+                    <input type="password" class="input-field" name="password" placeholder="Enter your password" required>
+            
+                    <button type="submit" class="submit-button">Sign In</button>
+                </form>
+                <p id="error-message" style="color: red; display: none;">Invalid username or password.</p>
+            </div>
+            
+
+            <div class="divider"></div>
+
+            <div class="form-column">
+                <h2 class="form-title">Sign Up</h2>
+                <form action="/post" method="POST"> <!-- Ensure action is "/post" -->
+                    <h2 class="form-title">Username</h2>
+                    <input type="text" class="input-field" name="username" placeholder="Create a username" required>
+
+                    <h2 class="form-title">Password</h2>
+                    <input type="password" class="input-field" name="password" placeholder="Create a password" required>
+
+                    <button type="submit" class="submit-button">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <button class="forgot-password">Forgot Password?</button>
+
+        <div class="logo-container">
+            <img src="logo.webp" alt="Logo" class="logo">
+        </div>
+    </div>
+</body>
+</html>

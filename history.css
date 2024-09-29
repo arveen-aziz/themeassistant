@@ -1,0 +1,125 @@
+/* Body and General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); /* Use a similar gradient as your previous pages */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    width: 100px; /* Adjusted logo size to match your previous files */
+    height: auto;
+}
+
+/* History Container */
+.history-container {
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with transparency */
+    margin: 100px auto 40px auto; /* Push content down */
+    max-width: 1200px;
+    border-radius: 8px;
+}
+
+/* Titles */
+.page-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Match existing text color */
+}
+
+/* Section Header for Better Positioning */
+.section-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #666;
+    border-bottom: 2px solid #84fab0;
+    padding-bottom: 5px;
+}
+
+/* Horizontal Scroll Container */
+.history-scroll-container {
+    overflow-x: auto; /* Enable horizontal scrolling from left to right */
+    white-space: nowrap; /* Prevent wrapping */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Slight transparency for contrast */
+    border-radius: 8px;
+}
+
+/* History Grid */
+.history-grid {
+    display: inline-flex; /* Inline-flex ensures horizontal scroll */
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Individual History Item */
+.history-item {
+    display: inline-block; /* Inline-block for horizontal alignment */
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-width: 300px; /* Minimum width for each item */
+}
+
+.history-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.history-details {
+    margin-top: 15px;
+    text-align: left; /* Align text to the left */
+}
+
+.suggested-clipart {
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px; /* Space between buttons */
+}
+
+.logout-button,
+.navigate-button {
+    padding: 12px 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #187f84; /* Use a similar red as your existing button */
+}
+
+.navigate-button {
+    background: #6ce7d8; /* Green for the new design button */
+}
